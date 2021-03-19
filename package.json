@@ -1,0 +1,29 @@
+{
+  "name": "ping-pong",
+  "version": "0.0.0",
+  "description": "PingPong",
+  "dependencies": {
+    "@types/react": "^17.0.3",
+    "@vkontakte/vk-tunnel": "^0.1.0",
+    "ammo.js": "github:kripken/ammo.js",
+    "babylonjs": "^4.2.0",
+    "express": "~4.17.1",
+    "path": "~0.12.7",
+    "react": "~16.13.1",
+    "react-dom": "~16.13.1",
+    "three": "^0.126.1",
+    "ts-loader": "~7.0.1",
+    "typescript": "~3.8.3",
+    "webpack": "~4.42.1",
+    "webpack-cli": "~3.3.11",
+    "ws": "^7.4.4"
+  },
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js",
+    "tunnel": "vk-tunnel --insecure=1 --http-protocol=http --ws-protocol=ws --host=localhost --port=1337"
+  }
+}
